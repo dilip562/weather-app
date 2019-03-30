@@ -49,7 +49,7 @@ class App extends Component {
                
     //         })
 	//         .catch(error => console.log(error))
-	const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=b2521915c6a851a49411b9f7512c0865`)
+	const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=b2521915c6a851a49411b9f7512c0865`)
 	const data = await api_call.json();
 	console.log(data)
 	if(city && country){

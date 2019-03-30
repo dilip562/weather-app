@@ -1,0 +1,31 @@
+.main{
+    /* border:1px solid yellow; */
+    height: 150px;
+    margin-top: 100px;
+}
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(10, 3, 114);
+    height: 30px;
+    font-size: 20px;
+    margin:10px;
+}
+button{
+    margin-left: 150px;
+    width: 200px;
+    border: none;
+    outline: none;
+    height: 35px;
+    font-size: 17px;
+    color: rgb(190, 209, 243);
+    border-radius: 20px;
+    background-color: #045dc2;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #4295f5;
+    box-shadow: 0 0  3px black;
+}

@@ -24,32 +24,8 @@ class App extends Component {
 	  e.preventDefault();
 	  const city = e.target.city.value;
 	  const country = e.target.country.value;
-    // axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=b2521915c6a851a49411b9f7512c0865`)
-	// 		.then(response => {console.log(response.data)
-	// 			if(city && country){
-	// 				this.setState({
-	// 					temperature: response.data.main.temp,
-	// 					city: response.data.name,
-	// 					country: response.data.sys.country,
-	// 					humidity: response.data.main.humidity,
-	// 					description: response.data.weather[0].description,
-	// 					error: undefined
-	// 				   })
-	// 			}
-	// 			else{
-	// 				this.setState({
-	// 					temperature: undefined,
-	// 					city: undefined,
-	// 					country: undefined,
-	// 					humidity: undefined,
-	// 					description: undefined,
-	// 					error: 'Please enter the value'
-	// 				   })
-	// 			}
-               
-    //         })
-	//         .catch(error => console.log(error))
-	const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=b2521915c6a851a49411b9f7512c0865`)
+    /
+	const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=APIKEY`)
 	const data = await api_call.json();
 	console.log(data)
 	if(city && country){
